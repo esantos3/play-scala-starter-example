@@ -16,5 +16,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.slick" % "slick-hikaricp_2.12" % "3.2.0",
   "com.typesafe.play" % "play_2.12" % "2.6.0-M5",
   "com.typesafe.play" %% "play-slick" % "3.0.0-M3",
-  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.0-M3"
+  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.0-M3",
+  "com.typesafe" % "config" % "1.3.1"
 )
