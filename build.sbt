@@ -8,6 +8,10 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 scalaVersion := "2.12.2"
 
-libraryDependencies += guice
-libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.0.0-M3" % Test
-libraryDependencies += "com.h2database" % "h2" % "1.4.194"
+libraryDependencies ++= Seq(
+  guice,
+  "org.scalatestplus.play" %% "scalatestplus-play" % "3.0.0-M3" % Test,
+  "org.postgresql" % "postgresql" % "42.1.1",
+  "com.typesafe.slick" % "slick_2.12" % "3.2.0",
+  "com.typesafe.slick" % "slick-hikaricp_2.12" % "3.2.0"
+)
