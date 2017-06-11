@@ -32,5 +32,5 @@ class DatabaseController @Inject() (
     val transactionsJson: JsValue = Json.toJson(transactions)
     Ok(transactionsJson)
   }
-  
+
 }
